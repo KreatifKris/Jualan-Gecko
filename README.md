@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <title>Gecko Shop</title>
@@ -37,4 +36,4 @@
   </div>
 </div>
 
-</body>
+
