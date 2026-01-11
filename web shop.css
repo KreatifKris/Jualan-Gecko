@@ -1,0 +1,172 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY & GLOBAL
+========================= */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+  color: #333;
+}
+
+/* =========================
+   JUDUL
+========================= */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ee4d2d;
+}
+
+/* =========================
+   BUTTON PROFILE
+========================= */
+button {
+  display: block;
+  margin: 0 auto 20px;
+  background: #ee4d2d;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* =========================
+   PRODUCT LAYOUT (GRID UTAMA)
+========================= */
+.product-layout {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* =========================
+   BARIS ATAS (2 CARD)
+========================= */
+.top {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+/* =========================
+   BARIS BAWAH (CARD TENGAH)
+========================= */
+.bottom {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bottom .card {
+  grid-column: 1 / 3;
+  justify-self: center;
+}
+
+/* =========================
+   CARD PRODUK
+========================= */
+.card {
+  width: 300px;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+}
+
+/* =========================
+   GAMBAR PRODUK
+========================= */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/* =========================
+   NAMA PRODUK
+========================= */
+.card h3 {
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* =========================
+   HARGA
+========================= */
+.card p {
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ee4d2d;
+}
+
+/* =========================
+   BUTTON BUY
+========================= */
+.buy {
+  display: block;
+  margin: 12px;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(135deg, #ee4d2d, #ff7337);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.buy:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff7337, #ee4d2d);
+}
+
+/* =========================
+   RESPONSIVE (MOBILE)
+========================= */
+@media (max-width: 768px) {
+  .product-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .top {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom .card {
+    grid-column: auto;
+  }
+}
