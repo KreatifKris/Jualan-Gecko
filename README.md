@@ -13,14 +13,14 @@
 <div class="product-layout">
   <div class="top">
     <div class="card">
-      <img src="Treamper.jpeg", alt="Gecko Tramper">
+      <img src="Treamper.jpeg" alt="Gecko Tramper">
       <h3>Gecko Tramper</h3>
       <p>Rp 1.500.000</p>
       <a href="https://wa.me/6285655002016" class="buy">Buy</a>
     </div>
 
     <div class="card">
-      <img src="macksnow.jpeg", alt="Gecko Macksnow">
+      <img src="macksnow.jpeg" alt="Gecko Macksnow">
       <h3>Gecko macksnow</h3>
       <p>Rp 2.000.000</p>
       <a href="https://wa.me/6285655002016" class="buy">Buy</a>
@@ -29,7 +29,7 @@
 
   <div class="bottom">
     <div class="card">
-      <img src="blizzard.jpeg", alt="Gecko Blizzard">
+      <img src="blizzard.jpeg" alt="Gecko Blizzard">
       <h3>Gecko Blizzard</h3>
       <p>Rp 1.200.000</p>
       <a href="https://wa.me/6285655002016" class="buy">Buy</a>
